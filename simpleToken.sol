@@ -5,9 +5,9 @@ pragma solidity ^0.8.7;
 contract token {
     mapping(address => uint) public balances;
     mapping(address => mapping(address => uint)) public allowance;
-    uint public totalSupply =  1000000*10**18; //Renseignez la total supply sous la forme : total_supply*10**18
-    string public name = "Hug0x0"; //Renseignez le nom entre les guillemets
-    string public symbol = "0x0"; //Renseignez le symbol entre les guillemets
+    uint public totalSupply =  1000000*10**18;
+    string public name = "Hug0x0";
+    string public symbol = "0x0";
     uint public decimals =18;
     
     event Transfer(address indexed from, address indexed to, uint value);
